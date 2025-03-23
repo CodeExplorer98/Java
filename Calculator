@@ -1,0 +1,67 @@
+package wipro;
+
+import java.util.Scanner; 
+public class Cal {
+
+	public static void main(String[] args) {
+		Scanner am=new Scanner(System.in);
+		System.out.print("1. Adittion:  ");
+		System.out.print("2. Substraction:  ");
+		System.out.print("3. Multilpication:  ");
+		System.out.print("4. Division:  ");
+		System.out.print("5. Modulus:  ");
+		System.out.println("6. Exponent");
+		System.out.print("Enter Your Choice:");
+		int z=am.nextInt();
+		
+		if(z>=1 && z<=6) {
+		System.out.println("Enter any two number:");
+		int a=am.nextInt();
+		int b=am.nextInt();
+		am.close();
+	
+	switch (z){
+	case (1):
+		int sum=a+b;
+	    System.out.println("Addition is:"+sum);
+	    break;
+	    
+	case (2):
+		int sub=a-b;
+	    System.out.println("Substarction is:"+sub);
+	    break;
+	
+	case (3):
+		int mul=a*b;
+	System.out.println("Multiplication is:"+mul);
+	break;
+	
+	case (4):
+		  if (b != 0) {
+              int div = a / b;
+              System.out.println("Division is: " + div);
+          } else {
+              System.out.println("Error: Division by zero is not allowed.");
+          }
+          break;
+	
+	case (5):
+		int mod=a%b;
+	System.out.println("modulus is:"+mod);
+	break;
+	 
+	
+	case (6):
+		double exp=Math.pow( a, b);
+	System.out.println("exponen is:"+exp);
+	break;
+	}
+		}else {
+		System.out.println("Invalid Choice. Please select correct option ");
+		}
+	System.out.println("Thanks for Using");
+		}
+  }
+
+
+
